@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACS Informática | Especialista em Impressoras Laser em Manaus</title>
+  
+  <meta name="description" content="Assistência técnica especializada exclusivamente em impressoras Laser HP, Brother e Samsung no Centro de Manaus. Mais de 12 anos de experiência. Orçamento rápido no WhatsApp.">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Azul tinta / Cyan técnico
+            ink: {
+              50: '#eff8ff',
+              100: '#dbeefe',
+              500: '#0284c7',
+              600: '#0070ba', // Azul royal/ciano
+              700: '#03548d',
+              900: '#0b233a',
+            },
+            whats: '#25D366',
+            whatsDark: '#1faa52'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @keyframes pulse-gentle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.025); }
+    }
+    .btn-pulse {
+      animation: pulse-gentle 2.5s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-ink-600 selection:text-white">
+
+  <!-- ========================================================
+       BARRA TOPO (INSTAGRAM, FACEBOOK E LINK DO PORTFÓLIO)
+  ======================================================== -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5 text-slate-400">
+          <i class="ph ph-map-pin text-ink-500 text-sm"></i> Atendimento no Centro de Manaus
+        </span>
+        <div class="flex items-center gap-3 border-l border-slate-700 pl-4">
+          <a href="https://instagram.com" target="_blank" class="hover:text-ink-500 transition flex items-center gap-1" title="Instagram">
+            <i class="ph ph-instagram-logo text-base"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" class="hover:text-ink-500 transition flex items-center gap-1" title="Facebook">
+            <i class="ph ph-facebook-logo text-base"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <a href="#portfolio" class="text-ink-500 hover:text-ink-100 font-semibold underline underline-offset-2 transition">
+          Ver Serviços Concluídos (Portfólio)
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- ========================================================
+       HEADER / NAVBAR (CORRIGIDO)
+  ======================================================== -->
+  <header class="sticky top-2 z-40 px-4 py-2">
+    <div class="max-w-6xl mx-auto bg-slate-950/95 backdrop-blur-md rounded-full px-5 py-2.5 border border-slate-800 shadow-2xl flex items-center justify-between">
+      
+      <!-- LADO ESQUERDO: LOGO -->
+      <a href="#" class="flex items-center gap-3 shrink-0">
+        <img src="logo_acs.png" alt="ACS Informática" class="h-10 sm:h-11 w-auto object-contain">
+        <div class="hidden sm:block">
+          <span class="text-white font-extrabold tracking-tight text-sm sm:text-base block leading-none">ACS INFORMÁTICA</span>
+          <span class="text-[10px] text-ink-500 uppercase tracking-widest font-semibold">Especialista em Laser</span>
+        </div>
+      </a>
+
+      <!-- LADO DIREITO: LINKS E BOTÃO ZAP -->
+      <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+        <a href="#portfolio" class="hidden md:inline-block text-xs uppercase tracking-wider font-bold text-slate-300 hover:text-white transition px-2">
+          Portfólio
+        </a>
+        <a href="#diferenciais" class="hidden md:inline-block text-xs uppercase tracking-wider font-bold text-slate-300 hover:text-white transition px-2">
+          Diferenciais
+        </a>
+        <a href="#diagnostico" class="hidden md:inline-block text-xs uppercase tracking-wider font-bold text-slate-300 hover:text-white transition px-2">
+          Diagnóstico
+        </a>
+        <a href="https://wa.me/559291447135?text=Ol%C3%A1%20ACS%20Inform%C3%A1tica!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20minha%20impressora%20laser." 
+           target="_blank" 
+           class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1faa52] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-4 sm:px-5 py-2 rounded-full transition shadow-md active:scale-95">
+          <i class="ph ph-whatsapp-logo text-base sm:text-lg"></i>
+          <span>Solicitar Orçamento</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================================
+       1. TELA INICIAL (HERO SECTION - 100% LASER HP, BROTHER, SAMSUNG)
+  ======================================================== -->
+  <section class="relative bg-slate-950 text-white pt-16 pb-20 overflow-hidden border-b border-slate-900">
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-ink-600/20 blur-[130px] pointer-events-none rounded-full"></div>
+
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+      
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ink-950 border border-ink-700/60 text-ink-500 text-xs font-bold uppercase tracking-wide mb-6">
+          <i class="ph ph-lightning"></i> Especialistas Exclusivos em Laser • HP | Brother | Samsung
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-5">
+          SUA IMPRESSORA LASER <br>
+          <span class="text-ink-500">APRESENTOU DEFEITO?</span>
+        </h1>
+
+        <p class="text-slate-300 text-base sm:text-lg mb-6 leading-relaxed max-w-xl">
+          Recupere seu equipamento com diagnóstico rápido e quem entende de verdade de tecnologia Laser. Troca de película fusora, rolo pressor, tracionador e reparo de placas lógicas e fontes em Manaus.
+        </p>
+
+        <!-- Mini Badges de Benefícios -->
+        <div class="flex flex-wrap gap-2.5 mb-8">
+          <span class="bg-slate-900/90 border border-slate-800 text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+            <i class="ph ph-clock text-ink-500"></i> Serviço Expresso
+          </span>
+          <span class="bg-slate-900/90 border border-slate-800 text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+            <i class="ph ph-shield-check text-ink-500"></i> Peças com Garantia
+          </span>
+          <span class="bg-slate-900/90 border border-slate-800 text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+            <i class="ph ph-credit-card text-ink-500"></i> Até 12x no Cartão
+          </span>
+        </div>
+
+        <!-- Botão Principal com Pulso -->
+        <a href="#diagnostico" 
+           class="btn-pulse inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1faa52] text-white text-base sm:text-lg font-black px-8 py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition active:scale-95">
+          <i class="ph ph-whatsapp-logo text-2xl"></i>
+          SOLICITAR ORÇAMENTO &rarr;
+        </a>
+      </div>
+
+      <!-- Card Lateral com as 3 marcas atendidas -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-sm rounded-3xl p-6 bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 shadow-2xl">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-ink-600/10 border border-ink-500/30 flex items-center justify-center text-ink-500 text-3xl mb-3">
+              <i class="ph ph-printer"></i>
+            </div>
+            <h2 class="text-white font-bold text-lg">Bancada Especializada Laser</h2>
+            <p class="text-xs text-slate-400 mt-1">Soluções completas para monocromáticas e coloridas</p>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
+              <span class="font-bold text-slate-200">HP LaserJet</span>
+              <span class="text-ink-500 font-semibold">Fusor, Placas & Pick-up</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
+              <span class="font-bold text-slate-200">Brother Laser / DCP</span>
+              <span class="text-ink-500 font-semibold">Cilindro, Toner & Mecânica</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
+              <span class="font-bold text-slate-200">Samsung Xpress / ML</span>
+              <span class="text-ink-500 font-semibold">LSU Laser & Rolo Fusor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FITA DE MARCAS EXCLUSIVAS (HP, BROTHER E SAMSUNG) -->
+  <div class="bg-ink-600 text-white py-3 overflow-hidden font-black text-xs sm:text-sm tracking-widest uppercase">
+    <div class="max-w-4xl mx-auto px-4 flex justify-around items-center">
+      <span>• HP LASERJET</span>
+      <span>• BROTHER LASER</span>
+      <span>• SAMSUNG LASER</span>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       2. 12 ANOS DE EXPERIÊNCIA
+  ======================================================== -->
+  <section class="py-14 bg-slate-900 text-white border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-snug">
+        Com mais de <span class="text-ink-500 underline decoration-ink-500 decoration-4">12 anos de experiência</span>, a ACS Informática é especializada e referência no setor de impressoras laser em <span class="text-ink-500">Manaus</span>.
+      </h2>
+      <p class="text-slate-400 mt-4 text-sm sm:text-base max-w-2xl mx-auto">
+        Mais de uma década consertando equipamentos laser com agilidade, transparência e compromisso com escritórios, empresas e comércios no Centro e em toda Manaus.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       3. CENTENAS DE SERVIÇOS REALIZADOS (PORTFÓLIO)
+  ======================================================== -->
+  <section id="portfolio" class="py-16 bg-slate-950 text-white border-b border-slate-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl font-black tracking-tight">
+          Centenas de serviços realizados com <span class="text-ink-500">dedicação e cuidado</span>. Veja alguns dos nossos trabalhos mais recentes.
+        </h2>
+        <p class="text-slate-400 text-sm mt-2">Fotos reais de bancada de manutenções executadas pela ACS Informática:</p>
+      </div>
+
+      <!-- GRID PARA INPUTAR AS IMAGENS DO CLIENTE -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
+        
+        <!-- FOTO 1 -->
+        <div class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80" 
+               alt="Troca de Película Fusora HP" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent flex items-end p-3">
+            <span class="text-[11px] font-bold text-white">Troca de Película HP LaserJet</span>
+          </div>
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80" 
+               alt="Manutenção Fusor Brother" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent flex items-end p-3">
+            <span class="text-[11px] font-bold text-white">Revisão Mecânica Brother DCP</span>
+          </div>
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80" 
+               alt="Troca Roletes Samsung" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent flex items-end p-3">
+            <span class="text-[11px] font-bold text-white">Pick-up Roller Samsung Laser</span>
+          </div>
+        </div>
+
+        <!-- FOTO 4 -->
+        <div class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-800">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" 
+               alt="Reparo Placa Fonte Laser" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent flex items-end p-3">
+            <span class="text-[11px] font-bold text-white">Recuperação de Placa Fonte / Lógica</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="https://wa.me/5592991447135?text=Ol%C3%A1!%20Vi%20as%20fotos%20dos%20servi%C3%A7os%20laser%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20equipamento." 
+           target="_blank" 
+           class="inline-flex items-center gap-2 text-ink-500 hover:text-ink-100 text-sm font-bold underline underline-offset-4 transition">
+          Falar sobre seu modelo de impressora no WhatsApp &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       4. NOSSOS DIFERENCIAIS
+  ======================================================== -->
+  <section id="diferenciais" class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">NOSSOS DIFERENCIAIS</h2>
+        <p class="text-slate-500 text-sm mt-2">Temos experiência e qualidade para atender seu equipamento laser com bancada altamente especializada.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- CARD 1 -->
+        <div class="bg-white p-7 rounded-2xl border-2 border-ink-600/30 hover:border-ink-600 transition shadow-sm text-center">
+          <div class="w-14 h-14 mx-auto rounded-xl bg-ink-50 text-ink-600 flex items-center justify-center text-3xl mb-4">
+            <i class="ph ph-gear"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-2">Diagnósticos Rápidos e Precisos</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Identificamos com precisão se a falha é na unidade fusora, no laser scanner, no cilindro (drum) ou nos sensores.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-white p-7 rounded-2xl border-2 border-ink-600/30 hover:border-ink-600 transition shadow-sm text-center">
+          <div class="w-14 h-14 mx-auto rounded-xl bg-ink-50 text-ink-600 flex items-center justify-center text-3xl mb-4">
+            <i class="ph ph-users-three"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-2">Foco Exclusivo em HP, Brother e Samsung</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Conhecimento aprofundado nos códigos de erro e arquitetura mecânica dessas 3 fabricantes líderes de mercado.
+          </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-white p-7 rounded-2xl border-2 border-ink-600/30 hover:border-ink-600 transition shadow-sm text-center">
+          <div class="w-14 h-14 mx-auto rounded-xl bg-ink-50 text-ink-600 flex items-center justify-center text-3xl mb-4">
+            <i class="ph ph-wrench"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-2">Serviço Rápido e Confiável</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Sabemos que impressora laser parada prejudica notas fiscais, contratos e relatórios do seu escritório.
+          </p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="bg-white p-7 rounded-2xl border-2 border-ink-600/30 hover:border-ink-600 transition shadow-sm text-center">
+          <div class="w-14 h-14 mx-auto rounded-xl bg-ink-50 text-ink-600 flex items-center justify-center text-3xl mb-4">
+            <i class="ph ph-shield-check"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-2">Garantia Comprovada</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Oferecemos garantia de 90 dias em todas as peças e serviços executados em nossa bancada técnica.
+          </p>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="bg-white p-7 rounded-2xl border-2 border-ink-600/30 hover:border-ink-600 transition shadow-sm text-center">
+          <div class="w-14 h-14 mx-auto rounded-xl bg-ink-50 text-ink-600 flex items-center justify-center text-3xl mb-4">
+            <i class="ph ph-certificate"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-2">Reparo de Alta Qualidade</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Utilizamos graxas térmicas originais de alta temperatura, películas de teflon e componentes resistentes.
+          </p>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="bg-white p-7 rounded-2xl border-2 border-ink-600/30 hover:border-ink-600 transition shadow-sm text-center">
+          <div class="w-14 h-14 mx-auto rounded-xl bg-ink-50 text-ink-600 flex items-center justify-center text-3xl mb-4">
+            <i class="ph ph-handshake"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-base mb-2">Satisfação do Cliente</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Transparência do começo ao fim: explicamos a causa raiz para evitar que o problema volte a ocorrer.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       5. SELECIONE O QUE ESTÁ ACONTECENDO COM A SUA IMPRESSORA (LASER)
+  ======================================================== -->
+  <section id="diagnostico" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10">
+      
+      <!-- Coluna da Dor -->
+      <div class="lg:col-span-5">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 mb-4">
+          • DOR / PROBLEMA
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight mb-4">
+          SEM SUA IMPRESSORA LASER, <br>
+          <span class="text-ink-600">SUA ROTINA PARA.</span>
+        </h2>
+        <ul class="space-y-2 text-sm font-semibold text-slate-700 mb-6">
+          <li class="border-l-4 border-ink-600 pl-3">A impressora que amassa papel na saída ou atola na entrada.</li>
+          <li class="border-l-4 border-ink-600 pl-3">Folha saindo com riscos pretos, manchas ou toner soltando.</li>
+          <li class="border-l-4 border-ink-600 pl-3">Barulhos estalando ou mensagem de erro de fusor/laser.</li>
+        </ul>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+          Equipamentos laser parados geram atrasos em faturamentos, contratos e demandas urgentes.
+        </p>
+
+        <div class="p-4 rounded-xl bg-slate-50 border-l-4 border-ink-600 border-t border-r border-b border-slate-200 text-xs sm:text-sm text-slate-700">
+          <strong>A boa notícia:</strong> Com o diagnóstico especializado da ACS Informática, sua impressora laser volta a imprimir nítido e rápido com garantia.
+        </div>
+      </div>
+
+      <!-- Coluna Interativa: Sintomas Específicos de Laser -->
+      <div class="lg:col-span-7">
+        <p class="text-xs sm:text-sm font-semibold text-slate-500 mb-4 flex items-center gap-2">
+          <i class="ph ph-hand-pointing text-ink-600 text-base"></i>
+          Toque no que está acontecendo com a sua impressora laser:
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6" id="problemList">
+          
+          <label class="problem-card flex items-center justify-between p-4 rounded-xl border border-slate-200 hover:border-ink-600 bg-white cursor-pointer transition select-none shadow-sm">
+            <div class="flex items-center gap-3">
+              <i class="ph ph-paper-plane-tilt text-xl text-ink-600"></i>
+              <span class="text-xs font-bold text-slate-800">Papel atolando / Não puxa folha</span>
+            </div>
+            <input type="checkbox" value="Papel atolando na gaveta ou não puxa folha (Pick-up Roller)" class="problem-cb w-4 h-4 text-ink-600 rounded border-slate-300 focus:ring-ink-500">
+          </label>
+
+          <label class="problem-card flex items-center justify-between p-4 rounded-xl border border-slate-200 hover:border-ink-600 bg-white cursor-pointer transition select-none shadow-sm">
+            <div class="flex items-center gap-3">
+              <i class="ph ph-thermometer-hot text-xl text-ink-600"></i>
+              <span class="text-xs font-bold text-slate-800">Papel amassando / Erro de Fusor</span>
+            </div>
+            <input type="checkbox" value="Papel sai sanfonado/enrugado ou Erro de Fusor (Película/Rolo Pressor)" class="problem-cb w-4 h-4 text-ink-600 rounded border-slate-300 focus:ring-ink-500">
+          </label>
+
+          <label class="problem-card flex items-center justify-between p-4 rounded-xl border border-slate-200 hover:border-ink-600 bg-white cursor-pointer transition select-none shadow-sm">
+            <div class="flex items-center gap-3">
+              <i class="ph ph-paint-brush-broad text-xl text-ink-600"></i>
+              <span class="text-xs font-bold text-slate-800">Manchas pretas / Riscos na folha</span>
+            </div>
+            <input type="checkbox" value="Impressão com riscos pretos, fundo escuro ou manchas repetitivas" class="problem-cb w-4 h-4 text-ink-600 rounded border-slate-300 focus:ring-ink-500">
+          </label>
+
+          <label class="problem-card flex items-center justify-between p-4 rounded-xl border border-slate-200 hover:border-ink-600 bg-white cursor-pointer transition select-none shadow-sm">
+            <div class="flex items-center gap-3">
+              <i class="ph ph-hand-palm text-xl text-ink-600"></i>
+              <span class="text-xs font-bold text-slate-800">Toner soltando / Não fixa no papel</span>
+            </div>
+            <input type="checkbox" value="Toner soltando da folha (falha na fusão/aquecimento)" class="problem-cb w-4 h-4 text-ink-600 rounded border-slate-300 focus:ring-ink-500">
+          </label>
+
+          <label class="problem-card flex items-center justify-between p-4 rounded-xl border border-slate-200 hover:border-ink-600 bg-white cursor-pointer transition select-none shadow-sm">
+            <div class="flex items-center gap-3">
+              <i class="ph ph-speaker-simple-slash text-xl text-ink-600"></i>
+              <span class="text-xs font-bold text-slate-800">Barulho de estalo / Engrenagem</span>
+            </div>
+            <input type="checkbox" value="Barulho forte de estalo ou engrenagens travadas" class="problem-cb w-4 h-4 text-ink-600 rounded border-slate-300 focus:ring-ink-500">
+          </label>
+
+          <label class="problem-card flex items-center justify-between p-4 rounded-xl border border-slate-200 hover:border-ink-600 bg-white cursor-pointer transition select-none shadow-sm">
+            <div class="flex items-center gap-3">
+              <i class="ph ph-power text-xl text-ink-600"></i>
+              <span class="text-xs font-bold text-slate-800">Não liga / Placa Fonte queimada</span>
+            </div>
+            <input type="checkbox" value="Impressora laser não liga ou desarmou após oscilação de energia" class="problem-cb w-4 h-4 text-ink-600 rounded border-slate-300 focus:ring-ink-500">
+          </label>
+
+        </div>
+
+        <!-- Botão Dinâmico de Envio -->
+        <button id="sendToWhatsappBtn" 
+                class="w-full bg-[#25D366] hover:bg-[#1faa52] text-white font-extrabold text-base py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 active:scale-95">
+          <i class="ph ph-whatsapp-logo text-2xl"></i>
+          SOLICITAR ORÇAMENTO NO WHATSAPP &rarr;
+        </button>
+        <p class="text-[11px] text-slate-400 text-center mt-2">Clique para enviar os problemas marcados direto para nossa bancada.</p>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- ========================================================
+       SEÇÃO: AVALIAÇÕES REAIS GOOGLE MAPS (ACS INFORMÁTICA)
+  ======================================================== -->
+  <section class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      
+      <!-- Cabeçalho -->
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          Confiança não se conquista da noite para o dia, <br class="hidden sm:block">
+          mas é <span class="text-ink-600">conquistada a cada atendimento</span>. Confira nossas avaliações.
+        </h2>
+        <p class="text-slate-500 text-sm mt-3">
+          Opiniões reais deixadas diretamente no perfil da ACS Informática no Google Maps
+        </p>
+      </div>
+
+      <!-- Grade de Avaliações -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- AVALIAÇÃO REAL 1 -->
+        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <!-- Se tiver a foto do perfil do usuário, pode usar: <img src="URL" class="w-11 h-11 rounded-full object-cover"> -->
+                <div class="w-11 h-11 rounded-full bg-ink-600 text-white font-bold text-sm flex items-center justify-center shadow-inner">
+                  A
+                </div>
+                <div>
+                  <!-- COLOQUE O NOME REAL DO CLIENTE DO MAPS -->
+                  <h3 class="font-bold text-sm text-slate-900">Vania Thaumaturgo</h3>
+                  <p class="text-[11px] text-slate-400">Avaliação no Google Maps</p>
+                </div>
+              </div>
+              <!-- Ícone Oficial do Google -->
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+            </div>
+
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+
+            <!-- COLOQUE O TEXTO EXATO DA AVALIAÇÃO AQUI -->
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              "Ótimo serviço, rapidez, atenção e preço justo."
+            </p>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px]">
+            <span class="text-emerald-600 font-semibold flex items-center gap-1">
+              <i class="ph ph-seal-check"></i> Avaliação Verificada
+            </span>
+            <span class="text-slate-400">Google Reviews</span>
+          </div>
+        </div>
+
+        <!-- AVALIAÇÃO REAL 2 -->
+        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-ink-700 text-white font-bold text-sm flex items-center justify-center shadow-inner">
+                  B
+                </div>
+                <div>
+                  <h3 class="font-bold text-sm text-slate-900">Salomão Soares</h3>
+                  <p class="text-[11px] text-slate-400">Avaliação no Google Maps</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+            </div>
+
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              "Ótimo atendimento e preço"
+            </p>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px]">
+            <span class="text-emerald-600 font-semibold flex items-center gap-1">
+              <i class="ph ph-seal-check"></i> Avaliação Verificada
+            </span>
+            <span class="text-slate-400">Google Reviews</span>
+          </div>
+        </div>
+
+        <!-- AVALIAÇÃO REAL 3 -->
+        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-slate-800 text-white font-bold text-sm flex items-center justify-center shadow-inner">
+                  C
+                </div>
+                <div>
+                  <h3 class="font-bold text-sm text-slate-900">Anderson Almeida</h3>
+                  <p class="text-[11px] text-slate-400">Avaliação no Google Maps</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+            </div>
+
+            <div class="flex text-amber-400 text-sm mb-3">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              "Ótimo lugar, pessoal bem atencioso."
+            </p>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-[11px]">
+            <span class="text-emerald-600 font-semibold flex items-center gap-1">
+              <i class="ph ph-seal-check"></i> Avaliação Verificada
+            </span>
+            <span class="text-slate-400">Google Reviews</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botão com Link Direto do Perfil da ACS Informática -->
+      <div class="text-center mt-10">
+        <a href="https://www.google.com/maps/place/ACS+Inform%C3%A1tica/@-3.1353009,-60.0218691,17z/data=!4m18!1m9!3m8!1s0x926c05792f541e65:0x1e9919e1b6db34e8!2sACS+Inform%C3%A1tica!8m2!3d-3.1353063!4d-60.0192942!9m1!1b1!16s%2Fg%2F1ydxc6kkr!3m7!1s0x926c05792f541e65:0x1e9919e1b6db34e8!8m2!3d-3.1353063!4d-60.0192942!9m1!1b1!16s%2Fg%2F1ydxc6kkr?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs sm:text-sm font-bold border border-slate-300 shadow-sm transition active:scale-95">
+          <svg class="w-4 h-4" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          <span>Conferir todas as avaliações no Google Maps &rarr;</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+<!-- ========================================================
+       7. SOBRE NÓS (LOCALIZAÇÃO & GOOGLE MAPS CORRIGIDO)
+  ======================================================== -->
+  <section class="py-16 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      
+      <div class="lg:col-span-5">
+        <span class="text-ink-500 font-bold text-xs uppercase tracking-widest">Localização Privilegiada</span>
+        <h2 class="text-3xl font-black mt-1 mb-4">Sobre Nós</h2>
+        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+          Com mais de uma década de história no Centro de Manaus, a <strong>ACS Informática</strong> construiu sua credibilidade entregando serviços de manutenção laser de alto padrão. Contamos com laboratório equipado, técnicos qualificados e estoque de peças para devolver sua impressora pronta no menor tempo possível.
+        </p>
+
+        <div class="space-y-3 text-sm text-slate-300 mb-8">
+          <div class="flex items-start gap-3">
+            <i class="ph ph-map-pin text-ink-500 text-xl mt-0.5"></i>
+            <div>
+              <p class="font-bold text-white">Endereço:</p>
+              <p class="text-xs text-slate-400">Av. Joaquim Nabuco, 706 - Centro, Manaus - AM, 69005-080</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="ph ph-clock text-ink-500 text-xl mt-0.5"></i>
+            <div>
+              <p class="font-bold text-white">Horário de Funcionamento:</p>
+              <p class="text-xs text-slate-400">Segunda a Sexta: 07:30h às 17:00h | Sábado: 08:00h às 13:00h</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="ph ph-phone text-ink-500 text-xl mt-0.5"></i>
+            <div>
+              <p class="font-bold text-white">Telefone & WhatsApp:</p>
+              <p class="text-xs text-slate-400">(92) 99144-7135</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/place/ACS+Inform%C3%A1tica/@-3.1353063,-60.0192942,19z/data=!4m6!3m5!1s0x926c05792f541e65:0x1e9919e1b6db34e8!8m2!3d-3.1353063!4d-60.0192942!16s%2Fg%2F1ydxc6kkr" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 bg-ink-600 hover:bg-ink-700 text-white font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition">
+          <i class="ph ph-navigation-arrow"></i> Traçar Rota no Google Maps
+        </a>
+      </div>
+
+      <!-- MAPA COM O PINO EXATO NA AV. JOAQUIM NABUCO -->
+      <div class="lg:col-span-7 h-[360px] rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
+        <iframe 
+          src="https://maps.google.com/maps?q=-3.1353063,-60.0192942&t=&z=18&ie=UTF8&iwloc=near&output=embed" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+  <!-- ========================================================
+       RODAPÉ
+  ======================================================== -->
+  <footer class="bg-slate-950 text-slate-500 py-10 border-t border-slate-900 text-xs text-center">
+    <div class="max-w-6xl mx-auto px-4 space-y-2">
+      <p class="font-bold text-slate-300">ACS INFORMÁTICA • Especialista em Impressoras Laser HP, Brother e Samsung</p>
+      <p>Centro, Manaus - AM • Mais de 12 anos de tradição</p>
+      <p class="text-[10px] text-slate-600">© 2026 Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5592991447135?text=Ol%C3%A1%20ACS%20Inform%C3%A1tica!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda%20com%20minha%20impressora%20laser." 
+     target="_blank" 
+     aria-label="Falar no WhatsApp"
+     class="fixed bottom-5 right-5 z-50 bg-[#25D366] hover:bg-[#1faa52] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition hover:scale-110 active:scale-95">
+    <i class="ph ph-whatsapp-logo text-3xl"></i>
+  </a>
+
+  <!-- ========================================================
+       JAVASCRIPT: DIAGNÓSTICO INTERATIVO PARA WHATSAPP
+  ======================================================== -->
+  <script>
+    const whatsappPhone = "5592991447135"; // Insira aqui o número com DDD 92
+
+    const checkboxes = document.querySelectorAll('.problem-cb');
+    const sendBtn = document.getElementById('sendToWhatsappBtn');
+
+    // Efeito visual no card ao marcar checkbox
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const card = cb.closest('.problem-card');
+        if (cb.checked) {
+          card.classList.add('border-ink-600', 'bg-ink-50/40');
+        } else {
+          card.classList.remove('border-ink-600', 'bg-ink-50/40');
+        }
+      });
+    });
+
+    // Disparo dinâmico da mensagem formatada para o WhatsApp
+    sendBtn.addEventListener('click', () => {
+      const selectedProblems = [];
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          selectedProblems.push(`- ${cb.value}`);
+        }
+      });
+
+      let message = "Olá ACS Informática! Encontrei vocês pelo site.";
+
+      if (selectedProblems.length > 0) {
+        message += "\n\nMinha impressora laser (HP / Brother / Samsung) está com o(s) seguinte(s) defeito(s):\n" + selectedProblems.join("\n") + "\n\nGostaria de solicitar um orçamento para conserto.";
+      } else {
+        message += "\n\nPreciso de um orçamento para manutenção da minha impressora laser (HP / Brother / Samsung).";
+      }
+
+      const encodedMessage = encodeURIComponent(message);
+      const url = `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
+      window.open(url, '_blank');
+    });
+  </script>
+
+</body>
+</html>
